@@ -1,0 +1,87 @@
+<div class="container-fluid d-none d-lg-block d-xl-block"z>
+    <div class="row full">
+        <div class="col-5">
+            <div class="row">
+                <div class="col title">
+                    Encontrar uma loja
+                </div>
+            </div>
+            <div class="row">
+                <div class="col busca">
+                    Selecione uma cidade: <br>
+                    <select class="form-select select-cidade" (change)="changeCity($event.target.value)" aria-label="Cidades">
+                        <option value="todas" selected>Todas</option>
+                        <option value="{{cidade}}" *ngFor="let cidade of cidades;">{{cidade}}</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tabelas table-responsive">
+                    <table class="table">
+                        <tr *ngFor="let loja of lojasTela;">
+                            <td class="infosLoja" (click)="changeMap(loja.mapa)">
+                                <span class="nomeLoja">{{loja.nome}}</span><br>
+                                {{loja.endereco}}<br>
+                                {{loja.telefone}}<br>
+                                {{loja.email}}<br>
+                                <a class="showFoto" (click)="open(loja.foto, loja.nome)">ver foto</a>
+                            </td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-7" [innerHtml]="mapa | safe: 'html'"></div>
+    </div>
+</div>
+
+<ng-template #imagemLoja>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">{{nomeLoja}}</h4>
+        <button type="button" class="close closeBtn" aria-label="Close" (click)="closeImage()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img width="100%" src="{{image}}">
+      </div>
+      <div class="modal-footer">
+      </div>
+</ng-template>
+
+<div class="container-fluid d-block d-lg-none d-xl-none">
+    <div class="row full">
+        <div class="col-12">
+            <div class="row">
+                <div class="col title">
+                    Encontrar uma loja
+                </div>
+            </div>
+            <div class="row">
+                <div class="col buscaMobile">
+                    Selecione uma cidade: <br>
+                    <select class="form-select select-cidade" (change)="changeCity($event.target.value)" aria-label="Cidades">
+                        <option value="todas" selected>Todas</option>
+                        <option value="{{cidade}}" *ngFor="let cidade of cidades;">{{cidade}}</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tabelas table-responsive">
+                    <table class="table">
+                        <tr *ngFor="let loja of lojasTela">
+                            <td class="infosLoja" (click)="showMap(loja)">
+                                <span class="nomeLoja">{{loja.nome}}</span><br>
+                                {{loja.endereco}}<br>
+                                {{loja.telefone}}<br>
+                                {{loja.email}}<br>
+                                <a class="showFoto" (click)="open(loja.foto, loja.nome)">ver foto</a>
+                                <span *ngIf="loja.visible" [innerHtml]="loja.mapa | safe: 'html'"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

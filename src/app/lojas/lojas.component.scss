@@ -1,0 +1,69 @@
+.full {
+    border: solid 1px #CBCDCA;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.title {
+    color: #002868;
+    font-size: 22px;
+    padding: 15px 0 0 25px;
+}
+
+.busca {
+    color: #000;
+    font-size: 14px;
+    padding: 15px 0 0 25px;
+    .select-cidade {
+        height: 40px;
+        margin-top: 10px;
+        outline-style: none;
+        width: 100%;
+    }
+}
+
+.modal-title {
+    font-size: 16px;
+}
+
+.closeBtn {
+    outline-style: none;
+}
+
+.buscaMobile {
+    color: #000;
+    font-size: 14px;
+    padding: 15px 40px 0 25px;
+    .select-cidade {
+        height: 40px;
+        margin-top: 10px;
+        outline-style: none;
+        width: 100%;
+    }
+}
+
+.tabelas {
+    height: 600px;
+    margin: 10px 0 0 15px;
+    padding-right: 20px;
+
+    .infosLoja {
+        color: #333;
+        cursor: pointer;
+    }
+
+    .nomeLoja {
+        color: #002868;
+        font-weight: bold;
+    }
+
+    .showFoto {
+        color: #002868;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-top: 80px;
+    }
+}

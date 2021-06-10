@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 title">
+            O tom que eu tenho em mente é...
+        </div>
+        <div class="cores {{cor.css}}" (click)="setTom(cor.tons);" *ngFor="let cor of cores"></div>
+        <div class="col-12"></div>
+        <div class="tons" [ngStyle]="{'background-color': tom.corTom}" (click)="changeColor(tom.corTom);" *ngFor="let tom of tons">
+            {{tom.nomeTom}}
+        </div>
+
+        <div class="col-12 ambiente d-none d-lg-block d-xl-block" [style.background]="'linear-gradient(0deg, #ccc 40%, ' + corFundo + ' 40%)'">
+            <img src="./../../assets/images/sala2.png" width="500" height="500">
+        </div>
+
+        <div class="col-12 ambiente d-block d-lg-none d-xl-none" [style.background]="'linear-gradient(0deg, #ccc 40%, ' + corFundo + ' 40%)'">
+            <img src="./../../assets/images/sala2.png" width="100%">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.manutencao {
+    color: #002868;
+    font-size: 22px;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.info {
+    font-size: 16px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-top: 80px;
+    }
+}

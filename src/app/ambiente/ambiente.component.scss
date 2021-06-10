@@ -1,0 +1,81 @@
+.title {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ambiente {
+    text-align: center;
+}
+
+.cores {
+    cursor: pointer;
+    height: 100px;
+    margin: 4px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.branco {
+    background-color: #DBDBCC;
+}
+
+.vermelho {
+    background-color: #E4032F;
+}
+
+.laranja {
+    background-color: #F28E16;
+}
+
+.dourado {
+    background-color: #FFCD00;
+}
+
+.amarelo {
+    background-color: #FFEC00;
+}
+
+.lima {
+    background-color: #B7CE0D;
+}
+
+.verde {
+    background-color: #3F993F;
+}
+
+.turquesa {
+    background-color: #2FAF9F;
+}
+
+.azul {
+    background-color: #4376A3;
+}
+
+.violeta {
+    background-color: #745184;
+}
+
+.neutro-frio {
+    background-color: #8F9293;
+}
+
+.neutro-quente {
+    background-color: #C1B28B;
+}
+
+.tons {
+    border: solid 1px silver;
+    cursor: pointer;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-top: 80px;
+    }
+}

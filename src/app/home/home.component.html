@@ -1,0 +1,30 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Venha nos visitar</h3>
+        <p>Ofertas imperdíveis pra você, seu condomínio e sua empresa!</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Vai pintar? Procura a gente.</h3>
+        <p>Entre em contato com nossos especialistas!</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+<br>
+<carousel
+    [margin]="80"
+    [autoplay]=false
+    [autoplayInterval]="1000"
+    [cellWidth]="143"
+    [height]="61"
+    [images]="imagesTintas">
+</carousel>
+<br>
