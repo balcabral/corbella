@@ -1,14 +1,48 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 manutencao">
-            <i class="fa fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i><br>
-            Página em construção
+        <div class="col-12 title">
+            Confira nossos eventos
         </div>
-        <div class="col-12 info">
-            Em breve teremos novidades para vocês. Obrigado por aguardar ;)
+
+        <div class="col-12">
+            <div *ngFor="let evento of eventos;">
+                <p>
+                    <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+                      aria-controls="collapseExample">
+                      {{evento.nome}}
+                    </button>
+                </p>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="fotos" *ngFor="let foto of evento.fotos;">
+                                    <a (click)="open(foto, evento.nome)">
+                                        <img src="{{foto}}" width="150" height="150">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<ng-template #imagemEvento>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">{{nomeEvento}}</h4>
+        <button type="button" class="close closeBtn" aria-label="Close" (click)="closeImage()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img width="100%" src="{{image}}">
+      </div>
+      <div class="modal-footer">
+      </div>
+</ng-template>
+<br>
 <br>
 <br>
 <br>

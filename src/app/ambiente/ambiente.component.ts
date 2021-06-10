@@ -329,8 +329,8 @@ export class AmbienteComponent implements OnInit {
           corTom: "#5C5C5B"
         },
         {
-          nomeTom: "Cinza - Padrãp Ferrolack",
-          corTom: "#E5FFF4"
+          nomeTom: "Imensidão Cinza",
+          corTom: "#858585"
         },
         {
           nomeTom: "Preto",
