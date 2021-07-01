@@ -4,6 +4,13 @@
             Confira nossos eventos
         </div>
 
+        <div class="col-12 video">
+            Revitalização do estadio XV de Piracicaba <br>
+            <video width="426" height="240" controls>
+                <source src="./../../assets/images/eventos/xv.MP4" type="video/mp4">
+            </video>
+        </div>
+
         <div class="col-12">
             <div *ngFor="let evento of eventos;">
                 <p>
@@ -29,6 +36,7 @@
         </div>
     </div>
 </div>
+
 <ng-template #imagemEvento>
     <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">{{nomeEvento}}</h4>

@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   images = [
-    'assets/images/banner1.jpg',
-    'assets/images/banner2.jpg'
+    'assets/images/bannerHome.jpg',
+    'assets/images/bannerHome2.jpg'
   ];
 
   imagesTintas = [
