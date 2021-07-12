@@ -22,8 +22,8 @@
                             <td class="infosLoja" (click)="changeMap(loja.mapa)">
                                 <span class="nomeLoja">{{loja.nome}}</span><br>
                                 {{loja.endereco}}<br>
-                                {{loja.telefone}}<br>
-                                {{loja.email}}<br>
+                                <a class="infosLoja" href="tel:{{loja.telefone}}">{{loja.telefone}}</a><br>
+                                <a class="infosLoja" href="mailto:{{loja.email}}">{{loja.email}}</a><br>
                                 <a class="showFoto" (click)="open(loja.foto, loja.nome)">ver foto</a>
                             </td>
                         </tr> 
@@ -73,8 +73,8 @@
                             <td class="infosLoja" (click)="showMap(loja)">
                                 <span class="nomeLoja">{{loja.nome}}</span><br>
                                 {{loja.endereco}}<br>
-                                {{loja.telefone}}<br>
-                                {{loja.email}}<br>
+                                <a class="infosLoja" href="tel:{{loja.telefone}}">{{loja.telefone}}</a><br>
+                                <a class="infosLoja" href="mailto:{{loja.email}}">{{loja.email}}</a><br>
                                 <a class="showFoto" (click)="open(loja.foto, loja.nome)">ver foto</a>
                                 <span *ngIf="loja.visible" [innerHtml]="loja.mapa | safe: 'html'"></span>
                             </td>

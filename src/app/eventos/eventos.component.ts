@@ -10,6 +10,7 @@ export class EventosComponent implements OnInit {
 
   eventos = [
     {
+      isCollapsed: true,
       nome: "EXPO 2019",
       fotos: [
         "assets/images/eventos/EXPO2019/1.jpg",
@@ -57,6 +58,31 @@ export class EventosComponent implements OnInit {
         "assets/images/eventos/EXPO2019/43.jpg",
         "assets/images/eventos/EXPO2019/44.jpg",
         "assets/images/eventos/EXPO2019/45.jpg",
+      ]
+    },
+    {
+      isCollapsed: true,
+      nome: "Revitalização da Concha Acustica - Taquaral",
+      fotos: [
+        "assets/images/eventos/Concha/1.jpg",
+        "assets/images/eventos/Concha/2.jpg",
+        "assets/images/eventos/Concha/3.jpg",
+        "assets/images/eventos/Concha/4.jpg",
+        "assets/images/eventos/Concha/5.jpg",
+        "assets/images/eventos/Concha/6.jpg",
+        "assets/images/eventos/Concha/7.jpg",
+        "assets/images/eventos/Concha/8.jpg",
+        "assets/images/eventos/Concha/9.jpg",
+        "assets/images/eventos/Concha/10.jpg",
+        "assets/images/eventos/Concha/11.jpg",
+        "assets/images/eventos/Concha/12.jpg",
+        "assets/images/eventos/Concha/13.jpg",
+        "assets/images/eventos/Concha/14.jpg",
+        "assets/images/eventos/Concha/15.jpg",
+        "assets/images/eventos/Concha/16.jpg",
+        "assets/images/eventos/Concha/17.jpg",
+        "assets/images/eventos/Concha/18.jpg",
+        "assets/images/eventos/Concha/19.jpg",
       ]
     }
   ];

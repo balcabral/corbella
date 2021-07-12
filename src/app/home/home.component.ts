@@ -14,11 +14,12 @@ export class HomeComponent implements OnInit {
 
   imagesTintas = [
     {path: "assets/images/marcas/coral.jpg"},
-    {path: "assets/images/marcas/anjo.jpg"},
     {path: "assets/images/marcas/sw.png"},
+    {path: "assets/images/marcas/anjo.jpg"},
     {path: "assets/images/marcas/atlas.jpg"},
     {path: "assets/images/marcas/montana.jpg"},
-    {path: "assets/images/marcas/mactra.jpg"},
+    {path: "assets/images/marcas/sika.jpg"},
+    {path: "assets/images/marcas/otto.jpg"},
     {path: "assets/images/marcas/hydroN.jpg"},
     {path: "assets/images/marcas/brazilian.jpg"},
     {path: "assets/images/marcas/sayerlack.jpg"},
