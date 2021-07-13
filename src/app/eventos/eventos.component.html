@@ -4,10 +4,16 @@
             Confira nossos eventos
         </div>
 
-        <div class="col-12 video">
+        <div class="col-md-6 col-12 video">
             Revitalização do estadio XV de Piracicaba <br>
             <video width="426" height="240" controls>
                 <source src="./../../assets/images/eventos/xv.MP4" type="video/mp4">
+            </video>
+        </div>
+        <div class="col-md-6 col-12 video">
+            Revitalização da Concha Acustica - Taquaral <br>
+            <video width="426" height="240" controls>
+                <source src="./../../assets/images/eventos/concha.MP4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -33,30 +39,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="col-12">
-            <div *ngFor="let evento of eventos;">
-                <p>
-                    <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-                      aria-controls="collapseExample">
-                      {{evento.nome}}
-                    </button>
-                </p>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="fotos" *ngFor="let foto of evento.fotos;">
-                                    <a (click)="open(foto, evento.nome)">
-                                        <img src="{{foto}}" width="150" height="150">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 
