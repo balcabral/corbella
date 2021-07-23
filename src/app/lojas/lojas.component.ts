@@ -16,14 +16,13 @@ export class LojasComponent implements OnInit {
     "Paulínia",
     "Sumaré",
     "Hortolandia",
-    "Barão Geraldo",
     "Indaiatuba",
     "Santa Bárbara d'Oeste",
     "Americana",
     "Piracicaba",
     "São Carlos",
-    "Sousas",
-    "Salto"
+    "Salto",
+    "Vinhedo"
   ]
 
   lojas = [
@@ -88,7 +87,7 @@ export class LojasComponent implements OnInit {
       visible: false
     },
     {
-      cidade: "Valihos",
+      cidade: "Valinhos",
       nome: "CORBELLA VALINHOS 1",
       endereco: "AV JOAQUIM ALVES CORREA, 4746 - PQ NOVA SUIÇA",
       telefone: "(19) 3849-6735",
@@ -148,7 +147,7 @@ export class LojasComponent implements OnInit {
       visible: false
     },
     {
-      cidade: "Barão Geraldo",
+      cidade: "Campinas",
       nome: "CORBELLA BARÃO GERALDO 1",
       endereco: "AVENIDA ALBINO JOSE BARBOSA DE OLIVEIRA, 1603 - BARÃO GERALDO",
       telefone: "(19) 3395-6110",
@@ -278,7 +277,7 @@ export class LojasComponent implements OnInit {
       visible: false
     },
     {
-      cidade: "Barão Geraldo",
+      cidade: "Campinas",
       nome: "CORBELLA BARAO GERALDO 2",
       endereco: "AVENIDA SANTA IZABEL, 273 - BARAO GERALDO",
       telefone: "(19) 2117-7941",
@@ -338,7 +337,7 @@ export class LojasComponent implements OnInit {
       visible: false
     },
     {
-      cidade: "Sousas",
+      cidade: "Campinas",
       nome: "CORBELLA SOUSAS",
       endereco: "AVENIDA ANTONIO CARLOS COUTO DE BARROS, 650 - JARDIM CONCEICAO (SOUSAS)",
       telefone: "(19) 3307-4179",
@@ -415,6 +414,26 @@ export class LojasComponent implements OnInit {
       email: "saocarlos2@corbellatintas.com.br",
       mapa: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.4831555924525!2d-47.92078238542278!3d-21.99279091142303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8709f034cd375%3A0xf9a722cdf7408cc4!2sR.%20Miguel%20Petroni%2C%203382%20-%20Jardim%20Bandeirantes%2C%20S%C3%A3o%20Carlos%20-%20SP%2C%2013563-470!5e0!3m2!1spt-BR!2sbr!4v1620681882886!5m2!1spt-BR!2sbr" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       foto: "assets/images/lojas/40/40.jpg",
+      visible: false
+    },
+    {
+      cidade: "Vinhedo",
+      nome: "CORBELLA VINHEDO",
+      endereco: "Av independência 7132, Jardim São Matheus - Vinhedo",
+      telefone: "(19) 3886-3316",
+      email: "corbella.vinhedo@terra.com.br",
+      mapa: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.27838662794!2d-46.988221785397734!3d-23.013548547474144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cd515a6ed0b1%3A0x61732895b25691b8!2sAv.%20Independ%C3%AAncia%2C%207132%20-%20Jardim%20Sao%20Matheus%2C%20Vinhedo%20-%20SP%2C%2013280-000!5e0!3m2!1spt-BR!2sbr!4v1627051488810!5m2!1spt-BR!2sbr" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+      foto: "assets/images/lojas/13/13.jpg",
+      visible: false
+    },
+    {
+      cidade: "Vinhedo",
+      nome: "CORBELLA VINHEDO 2",
+      endereco: "Av Brasil 789 - Jardim Brasil - Vinhedo - SP",
+      telefone: "(19) 3826-3696",
+      email: "vinhedo2@corbellatintas.com.br",
+      mapa: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6823345583825!2d-46.987096785397306!3d-23.035433148264403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf32a18468d0ff%3A0x244ce98dd89d0292!2sAv.%20Brasil%2C%20789%20-%20Res.%20Aqu%C3%A1rio%2C%20Vinhedo%20-%20SP%2C%2013280-000!5e0!3m2!1spt-BR!2sbr!4v1627051409133!5m2!1spt-BR!2sbr" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+      foto: "assets/images/lojas/41/41.jpg",
       visible: false
     }
   ];

@@ -80,21 +80,21 @@
 <!-- Navbar Mobile -->
 <nav class="navbar navbarMobile sticky-top navbar-expand-lg navbar-light bg-light d-block d-lg-none d-xl-none">
 
-    <div class="row no-gutters">
-      <div class="col-5">
-        <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-          &#9776;
-        </button>
-      </div>
-      <div class="col-2">
-        <a [routerLink]="'/home'"><img src="./../../assets/images/corbellaNovoMobile.png"></a>
-      </div>
-      <div class="col-5 text-right helpMobile">
-        <i class="fa fa-commenting-o" aria-hidden="true"></i> <a href="tel:(19) 3216-6558" class="phoneTo">(19) 3216-6558</a><br>
-        <a class="instagram" href="https://www.instagram.com/corbellatintas_oficial/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i> corbellatintas_oficial</a>
-      </div>
+  <section class="container basis-numero-container">
+    <div class="item basis-110" style="text-align: left; padding-bottom: 15px;">
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+      </button>
     </div>
-  
+    <div class="item basis-110">
+      <a [routerLink]="'/home'"><img src="./../../assets/images/corbellaNovoMobile.png"></a>
+    </div>
+    <div class="item basis-110 helpMobile">
+      <i class="fa fa-commenting-o" aria-hidden="true"></i> <a href="tel:(19) 3216-6558" class="phoneTo">(19) 3216-6558</a><br>
+      <a class="instagram" href="https://www.instagram.com/corbellatintas_oficial/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i> corbellatintas_oficial</a>
+    </div>
+  </section>
+
   <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapseMobile">
     <ul class="navbar-nav">
       <li class="nav-item">
